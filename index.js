@@ -1,8 +1,8 @@
 import express from "express";
 import cors from "cors";
-import "../loadEnvironment.mjs";
+import "./loadEnvironment.js";
 import "express-async-errors";
-import todo from "../routes/todo.mjs";
+import todo from "./routes/todo.js";
 
 const PORT = process.env.PORT || 5050;
 const app = express();
