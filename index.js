@@ -18,6 +18,10 @@ app.use((err, _req, res, next) => {
   res.status(500).send("Uh oh! An unexpected error occured.");
 });
 
+app.get("/", async (req, res) => {
+  res.send("TODOLIST API IS WORKING").status(200);
+});
+
 // start the Express server
 app.listen(PORT, () => {
   console.log(`Server is running on port: ${PORT}`);
